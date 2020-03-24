@@ -1,0 +1,33 @@
+.textBlock__h1 {
+  font-size: calc(20px + 2vmin);
+  font-weight: 700;
+  margin: 20px 0 20px 0;
+}
+
+.textBlock__article {
+  text-align: justify;
+  font-size: 16px;
+}
+
+.textBlock__link {
+  margin-left: 10px;
+  text-decoration: underline;
+  color: #1976d2;
+  font-size: calc(10px + 2vmin);
+  font-weight: 700;
+}
+
+.textBlock__button {
+  margin: 30px 30px 30px 0;
+  padding: 20px 30px;
+  border-radius: 5px;
+  background-color: #1976d2;
+  border: 1px solid #1976d2;
+  color: white;
+  font-size: calc(10px + 2vmin);
+}
+@media only screen and (min-width: 768px) {
+  .textBlock__article {
+    max-width: 40vw;
+  }
+}
