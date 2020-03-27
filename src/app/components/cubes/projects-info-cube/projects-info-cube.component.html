@@ -1,0 +1,85 @@
+<ng-template #front>
+  <div>
+    <app-title title="Bright Cubes"></app-title>
+    <app-project
+      [role]="brightCubes.role"
+      [duration]="brightCubes.duration"
+      [responsibilities]="brightCubes.responsibilities"
+    ></app-project>
+
+  </div>
+</ng-template>
+
+<ng-template #top>
+  <div>
+    <app-title title="Eneco Online Sales"></app-title>
+    <app-project
+      [role]="enecoOnlineSales.role"
+      [duration]="enecoOnlineSales.duration"
+      [responsibilities]="enecoOnlineSales.responsibilities"
+    ></app-project>
+  </div>
+</ng-template>
+
+<ng-template #bottom>
+  <div>
+    <app-title title="Eneco COM"></app-title>
+    <app-project
+      [role]="enecoCOM.role"
+      [duration]="enecoCOM.duration"
+      [responsibilities]="enecoCOM.responsibilities"
+    ></app-project>
+  </div>
+</ng-template>
+
+<ng-template #left>
+  <div>
+    <app-title title="Rate My House"></app-title>
+    <app-project
+      [role]="rateMyHouse.role"
+      [duration]="rateMyHouse.duration"
+      [responsibilities]="rateMyHouse.responsibilities"
+    ></app-project>
+  </div>
+</ng-template>
+
+<ng-template #right>
+  <div>
+    <app-title title="joeguitar"></app-title>
+    <app-project
+      [role]="joeguitar.role"
+      [duration]="joeguitar.duration"
+      [responsibilities]="joeguitar.responsibilities"
+    ></app-project>
+  </div>
+</ng-template>
+
+<ng-template #back>
+  <div>
+    <app-title title="huurmartijn.nl"></app-title>
+    <app-project
+      [role]="huurMartijn.role"
+      [duration]="huurMartijn.duration"
+      [responsibilities]="huurMartijn.responsibilities"
+    ></app-project>
+  </div>
+</ng-template>
+
+<section>
+  <app-title [title]="title"></app-title>
+  <app-article text="klik op de knoppen om te zien wat Martijn gedaan heeft."></app-article>
+  <app-base-cube
+    [templateFront]="front"
+    buttonTextFront="Bright Cubes"
+    [templateTop]="top"
+    buttonTextTop="Eneco Online Sales"
+    [templateBottom]="bottom"
+    buttonTextBottom="Eneco COM"
+    [templateLeft]="left"
+    buttonTextLeft="Rate My House"
+    [templateRight]="right"
+    buttonTextRight="joeguitar"
+    [templateBack]="back"
+    buttonTextBack="huurmartijn.nl"
+  ></app-base-cube>
+</section>

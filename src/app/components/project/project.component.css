@@ -1,0 +1,22 @@
+.project__role {
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+.project__duration{
+  font-size: 10px;
+  margin-bottom: 5px;
+  color: #479099;
+}
+
+.project__responsibilty {
+  font-size: 8px;
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .project__responsibilty {
+    font-size: 10px;
+    margin: 0 5px 5px 5px;
+  }
+}

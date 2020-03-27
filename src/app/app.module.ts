@@ -21,6 +21,8 @@ import { ListItemComponent } from './components/list-item/list-item.component';
 import { EducationComponent } from './components/education/education.component';
 import { TrainingComponent } from './components/training/training.component';
 import { SkillComponent } from './components/skill/skill.component';
+import { ProjectsInfoCubeComponent } from './components/cubes/projects-info-cube/projects-info-cube.component';
+import { ProjectComponent } from './components/project/project.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
@@ -45,7 +47,9 @@ const appRoutes: Routes = [
     ListItemComponent,
     EducationComponent,
     TrainingComponent,
-    SkillComponent
+    SkillComponent,
+    ProjectsInfoCubeComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule, 
