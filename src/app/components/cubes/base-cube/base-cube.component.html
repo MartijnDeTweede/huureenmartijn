@@ -1,6 +1,6 @@
 <app-flex-box-row>
 
-  <section>
+  <section class="controls--desktop">
     <section>
       <app-button [text]="buttonTextFront" (click)="changeFace('front')"></app-button>
     </section>
@@ -19,6 +19,12 @@
     <section>
       <app-button [text]="buttonTextBack" (click)="changeFace('back')" ></app-button>  
     </section>
+  </section>
+
+  <section class="controls--mobile">
+    <select>
+      <option>test</option>
+    </select>
   </section>
 
 	<div class="view_3d">
