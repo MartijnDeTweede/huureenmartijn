@@ -17,68 +17,23 @@
 <ng-template #bottom>
   <div>
     <app-title title="Opleidingen"></app-title>
-    <app-education
-      degree="HBO Commerciële Economie"
-      educator="Leidsche Onderwijs Instellingen"
-      startDate="02/2012"
-      endDate="10/2014"
+    <app-education *ngFor="let education of educations"
+      [degree]="education.degree"
+      [educator]="education.educator"
+      [startDate]="education.startDate"
+      [endDate]="education.endDate"
     ></app-education>
-
-    <app-education
-    degree="HBO Chemie"
-    educator="Hogeschool Arnhem en Nijmegen"
-    startDate="07/2007"
-    endDate="11/2011"
-  ></app-education>
-
-  <app-education
-  degree="Havo"
-  educator="Maaswaal College"
-  startDate="09/2002"
-  endDate="07/2007"
-></app-education>
-
   </div>
 </ng-template>
 
 <ng-template #left>
   <div>
     <app-title title="Curssusen"></app-title>
-    <app-training
-      training="Microsoft Certified: Azure Fundamentals"
-      status="Huidig"
-      year="2020"
+    <app-training  *ngFor="let training of trainings"
+      [training]="training.training"
+      [status]="training.status"
+      [year]="training.year"
     ></app-training>
-    <app-training
-      training="Microsoft 70-483"
-      status="Behaald"
-      year="2015"
-    ></app-training>
-    <app-training
-      training="MScrum PSM 1"
-      status="Behaald"
-      year="2015"
-     ></app-training>
-    <app-training
-      training="Business English Certificate Vantage"
-      status="Behaald"
-      year="2013"
-    ></app-training>
-    <app-training
-      training="Nima B consumentenMarketing"
-      status="Behaald"
-      year="2013"
-    ></app-training>
-    <app-training
-      training="Exin I-track: Project participation foundation"
-      status="Behaald"
-      year="2013"
-    ></app-training>
-    <app-training
-    training="Nima A"
-    status="Behaald"
-    year="2012"
-  ></app-training>
   </div>
 </ng-template>
 
