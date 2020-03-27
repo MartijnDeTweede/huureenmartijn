@@ -12,9 +12,9 @@ label {
 
 .view_3d {
   margin-top: 20px;
-  margin-left: 10px;
-  height: 300px;
-  width: 300px;
+  margin-left: 17px;
+  height: 70vw;
+  width: 70vw;
   display: inline-block;
   text-align: center;
   perspective: 1000px;
@@ -34,8 +34,8 @@ label {
 
 .pane {
   position: absolute; 
-  height: 300px;
-  width: 300px;
+  height: 70vw;
+  width: 70vw;
   border: 1px solid #479099;
   border-radius: 5px;
   opacity: 0.8;
@@ -103,6 +103,39 @@ label {
 
 .controls--mobile {
   display: block;
+}
+
+.controls--select{
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #479099;
+  color: #479099;
+  font-size: 16px;
+  width: 80vw;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .controls--select{
+    margin-right: 100px;
+    margin-bottom: 50px;
+  }
+
+  .controls--select {
+    width: 50vw;
+  }
+
+  .view_3d {
+    margin-left: 25px;
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .pane { 
+    width: 50vw;
+    height: 50vw;
+  }
+
 }
 
 @media only screen and (min-width: 1024px) {

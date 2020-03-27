@@ -22,8 +22,13 @@
   </section>
 
   <section class="controls--mobile">
-    <select>
-      <option>test</option>
+    <select class="controls--select" (change)="changeFace($event.target.value)" >
+      <option value="front" >{{buttonTextFront}}</option>
+      <option value="top" >{{buttonTextTop}}</option>
+      <option value="bottom" >{{buttonTextBottom}}</option>
+      <option value="left" >{{buttonTextLeft}}</option>
+      <option value="right" >{{buttonTextRight}}</option>
+      <option value="back" >{{buttonTextBack}}</option>
     </select>
   </section>
 

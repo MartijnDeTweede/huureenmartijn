@@ -1,8 +1,24 @@
-.educator__title {
+.educator {
   margin-bottom: 5px;
 }
 
+.educator__title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .educator__duration {
-  font-size: 12px;
+  font-size: 10px;
   color: #479099;
+}
+
+@media only screen and (min-width: 768px) {
+  .educator__title{
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+
+  .educator__duration {
+    font-size: 12px;
+  }
 }
