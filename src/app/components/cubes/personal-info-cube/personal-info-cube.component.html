@@ -1,60 +1,99 @@
 <ng-template #front>
   <div>
     <app-title title="Personalia"></app-title>
-      <app-list-item>Woont in Gouda</app-list-item>
-      <app-list-item>Getrouwd</app-list-item>
-      <app-list-item>Zoontje van zes maanden</app-list-item>
-      <app-list-item>email: schotel.mc@gmail.com</app-list-item>
-      <app-list-item>tel: 06-30967885</app-list-item>
+      <app-list-item *ngFor="let personalium of personalia"> {{ personalium }}</app-list-item>
   </div>
 </ng-template>
 
 <ng-template #top>
   <div>
     <app-title title="Skills"></app-title>
-    <div>
-      Martijn is fucking awesome
-    </div>
+    <app-flex-box-row>
+      <app-skill *ngFor="let skill of skills"> {{ skill }}</app-skill>
+    </app-flex-box-row>
   </div>
 </ng-template>
 
 <ng-template #bottom>
   <div>
     <app-title title="Opleidingen"></app-title>
-    <div>
-      Martijn is fucking awesome
-    </div>
+    <app-education
+      degree="HBO Commerciële Economie"
+      educator="Leidsche Onderwijs Instellingen"
+      startDate="02/2012"
+      endDate="10/2014"
+    ></app-education>
+
+    <app-education
+    degree="HBO Chemie"
+    educator="Hogeschool Arnhem en Nijmegen"
+    startDate="07/2007"
+    endDate="11/2011"
+  ></app-education>
+
+  <app-education
+  degree="Havo"
+  educator="Maaswaal College"
+  startDate="09/2002"
+  endDate="07/2007"
+></app-education>
+
   </div>
 </ng-template>
 
 <ng-template #left>
   <div>
     <app-title title="Curssusen"></app-title>
-    <div>
-      Martijn is fucking awesome
-    </div>
+    <app-training
+      training="Microsoft Certified: Azure Fundamentals"
+      status="Huidig"
+      year="2020"
+    ></app-training>
+    <app-training
+      training="Microsoft 70-483"
+      status="Behaald"
+      year="2015"
+    ></app-training>
+    <app-training
+      training="MScrum PSM 1"
+      status="Behaald"
+      year="2015"
+     ></app-training>
+    <app-training
+      training="Business English Certificate Vantage"
+      status="Behaald"
+      year="2013"
+    ></app-training>
+    <app-training
+      training="Nima B consumentenMarketing"
+      status="Behaald"
+      year="2013"
+    ></app-training>
+    <app-training
+      training="Exin I-track: Project participation foundation"
+      status="Behaald"
+      year="2013"
+    ></app-training>
+    <app-training
+    training="Nima A"
+    status="Behaald"
+    year="2012"
+  ></app-training>
   </div>
 </ng-template>
 
 <ng-template #right>
   <div>
     <app-title title="Intesses"></app-title>
-    <app-list-item>Programmeren</app-list-item>
-    <app-list-item>Gitaar spelen</app-list-item>
-    <app-list-item>Hardlopen</app-list-item>
-    <app-list-item>Koken</app-list-item>
-    <app-list-item>Lezen</app-list-item>
+    <app-list-item *ngFor="let interest of interests"> {{ interest }}</app-list-item>
   </div>
 </ng-template>
 
 <ng-template #back>
   <div>
     <app-title title="Weetjes"></app-title>
-    <app-list-item>Maakt heerlijke rocky road</app-list-item>
-    <app-list-item>Staat graag vroeg op</app-list-item>
-    <app-list-item>Kookt altijd met verse groente</app-list-item>
-    <app-list-item>Favoriete boek: Mistborn</app-list-item>
-    <app-list-item>Favoriete boek: Coach Carter</app-list-item>
+    <app-list-item *ngFor="let fact of facts">{{ fact }}</app-list-item>
+
   </div>
 </ng-template>
 

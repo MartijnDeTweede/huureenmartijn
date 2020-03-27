@@ -18,6 +18,9 @@ import { ArticleComponent } from './components/article/article.component';
 import { ButtonComponent } from './components/button/button.component';
 import { BaseCubeComponent } from './components/cubes/base-cube/base-cube.component';
 import { ListItemComponent } from './components/list-item/list-item.component';
+import { EducationComponent } from './components/education/education.component';
+import { TrainingComponent } from './components/training/training.component';
+import { SkillComponent } from './components/skill/skill.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
@@ -39,7 +42,10 @@ const appRoutes: Routes = [
     ArticleComponent,
     ButtonComponent,
     BaseCubeComponent,
-    ListItemComponent
+    ListItemComponent,
+    EducationComponent,
+    TrainingComponent,
+    SkillComponent
   ],
   imports: [
     BrowserModule, 

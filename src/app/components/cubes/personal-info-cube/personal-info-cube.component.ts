@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import data from './data';
 
 @Component({
   selector: 'app-personal-info-cube',
@@ -7,6 +8,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PersonalInfoCubeComponent implements OnInit {
   @Input() title: string;
+  public skills = data.skills;
+  public personalia = data.personalia;
+  public interests = data.interests;
+  public facts = data.facts;
 
   constructor() { }
 
