@@ -8,10 +8,6 @@ import { Component, OnInit, Input } from '@angular/core';
 export class TextBlockComponent implements OnInit {
   @Input() title: string;
   @Input() text: string;
-  @Input() link: string;
-  @Input() mainCtaText: string;
-  @Input() secondCtaText: string;
-
   constructor() { }
 
   ngOnInit(): void {

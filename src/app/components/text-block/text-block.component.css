@@ -1,33 +1,33 @@
-.textBlock__h1 {
-  font-size: calc(20px + 2vmin);
-  font-weight: 700;
-  margin: 20px 0 20px 0;
+.textBlock__backgroundHolder {
+  position: absolute;
+  z-index: -1;
+  margin-left: 15vw;
+  margin-bottom: 20px;
 }
 
-.textBlock__article {
-  text-align: justify;
-  font-size: 16px;
+.textBLock__background-block--upper {
+  height: 80px;
+  width: 80px;
+  background-color: #DDF6EE;
+  position: absolute;
 }
 
-.textBlock__link {
-  margin-left: 10px;
-  text-decoration: underline;
-  color: #1976d2;
-  font-size: calc(10px + 2vmin);
-  font-weight: 700;
+.textBLock__background-block--bottom {
+  height: 80px;
+  width: 80px;
+  top: 60px;
+  left: 60px;
+  position: absolute;
+  background-color: #DDF6EE;
+  z-index: -1;
 }
 
-.textBlock__button {
-  margin: 30px 30px 30px 0;
-  padding: 20px 30px;
-  border-radius: 5px;
-  background-color: #1976d2;
-  border: 1px solid #1976d2;
-  color: white;
-  font-size: calc(10px + 2vmin);
-}
-@media only screen and (min-width: 768px) {
-  .textBlock__article {
-    max-width: 40vw;
-  }
+.textBLock__background-block--right {
+  height: 80px;
+  width: 80px;
+  top: 30px;
+  left: 100px;
+  position: absolute;
+  background-color: #DDF6EE;
+  z-index: 0;
 }

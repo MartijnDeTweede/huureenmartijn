@@ -1,6 +1,11 @@
-<section>
-  <h1 class="textBlock__h1">{{title}}</h1>
-  <article class="textBlock__article">{{text}}</article>
-  <button class="textBlock__button">{{ mainCtaText}}</button>
-  <a class="textBlock__link">{{ secondCtaText}}</a>
+<section class="textBlock">
+  <app-title
+    [title]="title"
+  ></app-title>
+  <section class="textBlock__backgroundHolder">
+    <section class="textBLock__background-block--upper"></section>
+    <section class="textBLock__background-block--bottom"></section>
+    <section class="textBLock__background-block--right"></section>
+  </section>
+  <app-article [text]="text"></app-article>
 </section>

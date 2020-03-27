@@ -1,0 +1,58 @@
+<app-flex-box-row>
+
+  <section>
+    <section>
+      <app-button [text]="buttonTextFront" (click)="changeFace('front')"></app-button>
+    </section>
+      <section>
+        <app-button [text]="buttonTextLeft" (click)="changeFace('left')" ></app-button>
+      </section>
+      <section>
+        <app-button [text]="buttonTextRight" (click)="changeFace('right')" ></app-button>
+      </section>
+      <section>
+        <app-button [text]="buttonTextTop" (click)="changeFace('top')" ></app-button>
+      </section>
+      <section>
+        <app-button [text]="buttonTextBottom" (click)="changeFace('bottom')" ></app-button>
+      </section>
+      <section>
+        <app-button [text]="buttonTextBack" (click)="changeFace('back')" ></app-button>  
+      </section>
+  </section>
+
+	<div class="view_3d">
+	    <div class="cube_3d {{ selectedFace }}">
+        
+	      <div [ngClass]="{'pane': true, 'front': true}">
+          <ng-container *ngTemplateOutlet="templateFront">
+          </ng-container>
+        </div>
+
+	      <div [ngClass]="{'pane': true, 'top': true}">
+          <ng-container *ngTemplateOutlet="templateTop">
+          </ng-container>
+        </div>
+
+	      <div [ngClass]="{'pane': true, 'bottom': true}">
+          <ng-container *ngTemplateOutlet="templateBottom">
+          </ng-container>
+        </div>
+
+	      <div [ngClass]="{'pane': true, 'left': true}">
+          <ng-container *ngTemplateOutlet="templateLeft">
+          </ng-container>
+        </div>
+
+        <div [ngClass]="{'pane': true, 'right': true}">
+          <ng-container *ngTemplateOutlet="templateRight">
+          </ng-container>
+        </div>
+
+        <div [ngClass]="{'pane': true, 'back': true}">
+          <ng-container *ngTemplateOutlet="templateBack">
+          </ng-container>
+        </div>
+	    </div>
+	  </div>
+  </app-flex-box-row>
